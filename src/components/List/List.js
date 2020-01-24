@@ -3,6 +3,7 @@ import styles from './List.scss';
 import Hero from '../Hero/Hero';
 import PropTypes from 'prop-types';
 import Column from '../Column/Column';
+import {settings} from '../../data/dataStore';
 
 class List extends React.Component {
     /* static property class definition */
