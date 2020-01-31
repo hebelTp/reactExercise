@@ -31,11 +31,13 @@ Object.keys(initialState).forEach(item => {
 // merge all reducers
 const storeReducer = combineReducers(reducers);
 
+
 // create store
 const store = createStore(
+  
   storeReducer,
   initialState,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
-
+console.log(store.getState());
 export default store;

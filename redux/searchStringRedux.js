@@ -9,9 +9,19 @@ const createActionName = name => `app/${reducerName}/${name}`;
 // actions types
 export const CHANGE = createActionName('CHANGE');
 // action creators
-export const createAction_changeSearchString = payload => ({payload, type: CHANGE });
+export const createAction_changeSearchString =  payload => ({payload, type: CHANGE }); // 
+
+//function syntax for upper redux syntax  
+{/*export function  createAction_changeSearchString(payload) {
+  return{
+    type: CHANGE,
+    payload,
+  };
+}*/}
+
 // reducer
 export default function reducer(statePart = '', action = {}) {
+  //console.log('NEW ACTION ARRIVED', action);
   switch (action.type) {
     case CHANGE:
       return action.payload;
