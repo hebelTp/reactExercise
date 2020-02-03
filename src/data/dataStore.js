@@ -12,6 +12,16 @@ export const settings = {
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+  
+  header: {
+    logo:'dog',
+  },
+};
+
+export const infoData = {
+  title: 'Information about app',
+  adres: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  content: '',
 };
 
 export const pageContents = {
