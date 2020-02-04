@@ -9,7 +9,7 @@ const MainLayout = ({children}) => (
   </div>
 );
 
-MainLayout.PropTypes = {
+MainLayout.propTypes = {
   children: PropTypes.node,
 };
 

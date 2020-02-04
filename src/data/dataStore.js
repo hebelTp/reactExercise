@@ -95,6 +95,16 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Things to do in home&garden <sup>soon!</sup>',
+    image: 'https://cdn.pixabay.com/photo/2012/05/07/17/09/residential-48715_960_720.png',
+  },
+  {
+    id: 'list-3',
+    title: 'Things to do together<sup>soon!</sup>',
+    image: 'https://cdn.pixabay.com/photo/2017/02/07/10/33/crowd-2045499_960_720.jpg',
+  },
 ];
 
 const columns = [
@@ -121,6 +131,24 @@ const columns = [
     listId: 'list-2',
     title: 'Strange column',
     icon: 'question',
+  },
+  {
+    id: 'column-5',
+    listId: 'list-2',
+    title: 'Garden',
+    icon: 'flower',
+  },
+  {
+    id: 'column-6',
+    listId: 'list-2',
+    title: 'Home',
+    icon: 'flower',
+  },
+  {
+    id: 'column-7',
+    listId: 'list-3',
+    title: 'entertimet',
+    icon: 'cinema',
   },
 ];
 
