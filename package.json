@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
-    "postbuild": "npm run server",
+    "start": "npm run server",
     "lint": "eslint src/",
     "server": "http-server dist"
   },
