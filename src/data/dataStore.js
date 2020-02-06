@@ -126,29 +126,36 @@ const columns = [
     title: 'Games',
     icon: 'gamepad',
   },
+  
   {
     id: 'column-4',
+    listId: 'list-2',
+    title: 'Garden',
+    icon: 'tree',
+  },
+  {
+    id: 'column-5',
+    listId: 'list-2',
+    title: 'Home',
+    icon: 'home',
+  },
+  {
+    id: 'column-6',
     listId: 'list-2',
     title: 'Strange column',
     icon: 'question',
   },
   {
-    id: 'column-5',
-    listId: 'list-2',
-    title: 'Garden',
-    icon: 'flower',
-  },
-  {
-    id: 'column-6',
-    listId: 'list-2',
-    title: 'Home',
-    icon: 'flower',
-  },
-  {
     id: 'column-7',
     listId: 'list-3',
     title: 'entertimet',
-    icon: 'cinema',
+    icon: 'film',
+  },
+  {
+    id: 'column-4',
+    listId: 'list-3',
+    title: 'Strange column',
+    icon: 'question',
   },
 ];
 
