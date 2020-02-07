@@ -1,0 +1,16 @@
+@import '../../styles/settings.scss';
+
+.component {
+    padding: $base-size;
+    border-radius: $radius;
+    }
+
+    .cards {
+    color: $color-dark;
+}
+
+@media (max-width: 767px) {
+    .component {
+      width: 100%;
+    }
+  }

@@ -9,6 +9,7 @@ import { settings } from '../../data/dataStore';
 
 
 
+
 class Column extends React.Component {
     
     static propTypes = {
