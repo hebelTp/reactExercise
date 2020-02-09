@@ -1,13 +1,13 @@
 import {connect} from 'react-redux';
 import SearchResults from './SearchResults';
-import { getCardsFromSearch } from '../../../redux/cardRedux';
+import { getFoundedCards } from '../../../redux/cardRedux';
+//import { createAction_changeSearchString } from '../../../redux/searchStringRedux';
 
 const mapStateToProps = (state, props) => {
-  const searchString = props.match.params.searchString;
+  console.log('Information provided by Route site adress & params',props.match.params.id);
   return {
-    cards: getCardsFromSearch(state, searchString),
+    cards: getFoundedCards( state, props.match.params.id),  
   };
-
 };
 
 export default connect(mapStateToProps)(SearchResults);
