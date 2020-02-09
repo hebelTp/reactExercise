@@ -1,11 +1,10 @@
 import {connect} from 'react-redux';
 import SearchResults from './SearchResults';
-import { getCardsFromSearch } from '../../../redux/cardRedux';
+import { getFoundedCards } from '../../../redux/cardRedux';
 
 const mapStateToProps = (state, props) => {
-  const searchString = props.match.params.searchString;
   return {
-    cards: getCardsFromSearch(state, searchString),
+    cards: getFoundedCards(state, props.match.params.id),
   };
 
 };
