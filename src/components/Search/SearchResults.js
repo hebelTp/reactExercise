@@ -9,15 +9,18 @@ class SearchResults extends React.Component {
 
   static propTypes = {
     cards: PropTypes.array,
+    searchString: PropTypes.string,
   }
 
   render() {
     const { cards } = this.props;
+    //console.log('searchResults');
 
     return (
       <Container>
         <section className={styles.component}>
           <div className={styles.cards} >
+          
             {cards.map(cardData => (
               <Card key={cardData.id} {...cardData} />
             ))}
@@ -28,4 +31,4 @@ class SearchResults extends React.Component {
   }
 }
 
-export default SearchResults; 
+export default SearchResults;  

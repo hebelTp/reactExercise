@@ -4,10 +4,16 @@ import shortid from 'shortid';
 //export const getCardsForColumns = ({cards, searchString}, columnId) => 
 //cards.filter(card => card.columnId == 
 //columnId && new RegExp(searchString, 'i').test(card.title));
-export const getCardsForColumns = ({cards}, columnId) => cards.filter(card => card.columnId == columnId);
-export const getCardsFromSearch = ({cards}, searchString) => 
-  cards.filter(card => new RegExp(searchString, 'i').test(card.title));
+export const getCardsForColumns = ({cards}, columnId) => 
+  cards.filter(card => card.columnId == columnId);
+
+export const getFoundedCards = ({cards}, searchString) =>
+// FLAG 'i' IN RegExp IGNORE CAPITAL LETTERS
+// test(card.title)  what should it be compared to ??
+  cards.filter((cards) => new RegExp(searchString, 'i').test(cards.title));
+
 // action name creator
+
 const reducerName = 'cards';
 const createActionName = name => `app/${reducerName}/${name}`;
 
