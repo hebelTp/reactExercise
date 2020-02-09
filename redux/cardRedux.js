@@ -10,9 +10,9 @@ export const getFoundedCards = ({cards}, searchString) =>
 // FLAG 'i' IN RegExp IGNORE CAPITAL LETTERS
 // test(card.title)  what should it be compared to ??
   cards.filter((cards) => new RegExp(searchString, 'i').test(cards.title));
-//console.log(getFoundedCards);
 
 // action name creator
+
 const reducerName = 'cards';
 const createActionName = name => `app/${reducerName}/${name}`;
 
