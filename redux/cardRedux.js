@@ -11,8 +11,6 @@ export const getFoundedCards = ({cards}, searchString) =>
 // FLAG 'i' IN RegExp IGNORE CAPITAL LETTERS
 // test(card.title)  what should it be compared to ??
   cards.filter((cards) => new RegExp(searchString, 'i').test(cards.title));
-console.log(getFoundedCards);
-
 
 // action name creator
 
@@ -27,7 +25,6 @@ export const createActionAddCard = payload => ({ payload: { ...payload, id: shor
 
 // reducer
 export default function reducer(state = [], action = {}) {
-  console.log(state);
   switch (action.type) {
     case ADD_CARD:
       return [...state, action.payload];
